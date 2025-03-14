@@ -1,4 +1,4 @@
-package com.jetbrains.startdyplom.ui.theme
+package com.jetbrains.dentistapple.ui.theme
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -12,7 +12,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.jetbrains.startdyplom.R
 
 // Фонове зображення для всього екрану
 @Composable

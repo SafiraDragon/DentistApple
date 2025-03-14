@@ -1,10 +1,7 @@
-package com.jetbrains.startdyplom
+package com.jetbrains.dentistapple
 
-//MainActivity.kt
+//MainScreen.kt
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -12,18 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.*
-import com.jetbrains.startdyplom.ui.theme.AppTheme
-
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            AppTheme { // Виправлено
-                MainScreen()
-            }
-        }
-    }
-}
+import com.jetbrains.dentistapple.ui.theme.AppTheme
 
 @Composable
 fun MainScreen() {
@@ -47,7 +33,7 @@ fun MainScreen() {
 fun BottomNavigationBar(navController: NavController) {
     val items = listOf(
         BottomNavItem("brushing", "B"),
-        BottomNavItem("calendar", "D"),
+        BottomNavItem("calendar", "M"),
         BottomNavItem("chat", "C"),
         BottomNavItem("profile", "P")
     )
@@ -76,7 +62,7 @@ data class BottomNavItem(val route: String, val label: String)
 @Preview(showBackground = true)
 @Composable
 fun MainScreenPreview() {
-    AppTheme { // Виправлено
+    AppTheme {
         MainScreen()
     }
 }

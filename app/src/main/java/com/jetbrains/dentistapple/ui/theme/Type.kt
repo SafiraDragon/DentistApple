@@ -1,4 +1,4 @@
-package com.jetbrains.startdyplom.ui.theme
+package com.jetbrains.dentistapple.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,6 +1,6 @@
-package com.jetbrains.startdyplom
+package com.jetbrains.dentistapple
 
-//MainScreen.kt
+//MainActivity.kt
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.*
-import com.jetbrains.startdyplom.ui.theme.AppTheme
+import com.jetbrains.dentistapple.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,7 +47,7 @@ fun MainScreen() {
 fun BottomNavigationBar(navController: NavController) {
     val items = listOf(
         BottomNavItem("brushing", "B"),
-        BottomNavItem("calendar", "M"),
+        BottomNavItem("calendar", "D"),
         BottomNavItem("chat", "C"),
         BottomNavItem("profile", "P")
     )
@@ -61,7 +61,7 @@ fun BottomNavigationBar(navController: NavController) {
                 onClick = {
                     navController.navigate(item.route) {
                         popUpTo(navController.graph.startDestinationId) {
-                            inclusive = false // Виправлено, щоб не видаляти стартовий екран
+                            inclusive = false
                         }
                         launchSingleTop = true
                     }
@@ -71,6 +71,7 @@ fun BottomNavigationBar(navController: NavController) {
     }
 }
 
+// Уникнення дублікатів
 data class BottomNavItem(val route: String, val label: String)
 
 @Preview(showBackground = true)

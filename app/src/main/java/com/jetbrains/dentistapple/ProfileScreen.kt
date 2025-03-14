@@ -1,4 +1,4 @@
-package com.jetbrains.startdyplom
+package com.jetbrains.dentistapple
 
 //ProfileScreen.kt
 

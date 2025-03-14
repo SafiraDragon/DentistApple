@@ -1,4 +1,4 @@
-package com.jetbrains.startdyplom.ui.theme
+package com.jetbrains.dentistapple.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

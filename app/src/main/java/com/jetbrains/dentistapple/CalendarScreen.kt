@@ -1,4 +1,4 @@
-package com.jetbrains.startdyplom
+package com.jetbrains.dentistapple
 
 //CalendarScreen.kt
 
@@ -7,10 +7,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
-import androidx.compose.ui.platform.*
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import java.util.*
 import androidx.compose.ui.viewinterop.AndroidView
 
 
